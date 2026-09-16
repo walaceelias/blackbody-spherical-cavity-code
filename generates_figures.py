@@ -12,14 +12,19 @@ import pandas as pd
 matplotlib.use("Agg")
 
 """
-Figure generator for the article (Alternative A: scalar field), consolidated version.
-[Code blinded for peer review]
+Generates all figures for the article: 
+"Blackbody Radiation in Spherical Cavities: A Theoretical Study of the Discrete Spectrum" 
+[Code blinded for peer review] 
 
-Physics and structural features incorporated:
-  (3) g(w) = 2 R0^3 w^2 / (3 pi c^3) [Correct Weyl's law for scalar field]
-  (5) True spectral cutoff at x_nl <= x_cut, rather than a rectangular cutoff in (n,l)
-  (6) Figures 2-4 display actual density (coarse-grained / stem), rather than 
-      (2l+1)<E_nl> connected by lines, ensuring correct units (energy/frequency).
+Generated figures (all in natural units, hbar = c = kB = 1): 
+  fig1_triangular_region.png   -> Fig. 1: Geometric interpretation of mode counting in the (n, l) plane
+  fig2_sparse_sector.png       -> Fig. 2: Sparse sector (stem plot for individual modes, x_cut = 10, T = 35)
+  fig3_intermediate_sector.png -> Fig. 3: Intermediate sector (coarse-grained density, x_cut = 60, T = 35)
+  fig4_panel_deltaomega.png    -> Fig. 4: Dense sector panel comparing 3 bin widths (x_cut = 300, T = 35)
+  fig5_convergence.png         -> Fig. 5: Convergence of U_numerical -> U_analytical using true spectral cutoffs
+
+Requirements: 
+    pip install numpy scipy matplotlib pandas 
 """
 
 # ----------------------------------------------------------------------
