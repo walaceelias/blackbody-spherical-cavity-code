@@ -260,8 +260,9 @@ def generate_fig4_panel_deltaomega(T: float, R0: float, x_cut: float, bin_widths
     plt.setp(ax_top_right.get_yticklabels(), visible=False)
 
     # Compact single legend inside the first panel
-    ax_top_left.legend([bar_handle, line_handle], ["coarse-grained", "leading Weyl"],
-                       loc="upper left", fontsize=11, framealpha=0.9)
+    # ax_top_left.legend([bar_handle, line_handle], ["coarse-grained", "leading Weyl"],
+    #                   loc="upper left", fontsize=11, framealpha=0.9)
+  
 
     plt.savefig(out_file, dpi=150, bbox_inches="tight")
     plt.close()
@@ -308,7 +309,7 @@ def generate_fig5_spectral_convergence(T: float, R0: float, x_cutoffs: list, out
 # ----------------------------------------------------------------------
 
 if __name__ == "__main__":
-    OUT_DIR = "figures_v2"
+    OUT_DIR = "Figures"
     os.makedirs(OUT_DIR, exist_ok=True)
 
     T = 35.0
