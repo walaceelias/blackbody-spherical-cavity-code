@@ -14,7 +14,7 @@ matplotlib.use("Agg")
 """
 Generates all figures for the article: 
 "Blackbody Radiation in Spherical Cavities: A Theoretical Study of the Discrete Spectrum" 
-[Code blinded for peer review] 
+[Code anonymous for peer review] 
 
 Generated figures (all in natural units, hbar = c = kB = 1): 
   fig1_triangular_region.png   -> Fig. 1: Geometric interpretation of mode counting in the (n, l) plane
